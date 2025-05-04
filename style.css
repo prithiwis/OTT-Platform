@@ -1,0 +1,207 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.head-text a{
+    text-decoration: none;
+    color: red
+}
+.unordered-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.items{
+    margin-left: 15px;
+}
+.items a:hover{
+    color: orange;
+}
+.items a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+}
+.btn:hover{
+    background-color: red;
+}
+.search-input{
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: white;
+    border: 2px solid red;
+}
+.search-input[type="text"]{
+    color: black;
+    border: 2px solid red;
+}
+.search-icon{
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.search-icon:hover{
+    background-color: red;
+    color: white;
+}
+.btn1{
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: slategray;
+    cursor: pointer;
+}
+.image-slider{
+    width: 60%;
+    height: 600px;
+    background-image: url("./jibon-trishna-poster.jpg");
+    background-size: 100% 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    animation: changeImage 20s linear infinite;
+}
+.box-container .box:nth-child(1){
+    display: block;
+}
+.box-container .box:nth-child(2){
+    display: block;
+}
+.box-container .box:nth-child(3){
+    display: block;
+}
+.box-container .box:nth-child(4){
+    display: block;
+}
+.box-container .box:nth-child(5){
+    display: block;
+}
+.box-container .box{
+    display: none; 
+}
+.video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.video video{
+    position: relative;
+    max-width: 900px;
+}
+.video .active{
+    visibility: visible;
+    opacity: 1;
+}
+.close{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 32px;
+}
+@keyframes changeImage {
+    0% { background-image: url("./jibon-trishna-poster.jpg"); }
+    25% { background-image: url("./josh-poster.jpg"); }
+    50% { background-image: url("./tekka-poster.jpg"); }
+    75% { background-image: url("./pradhan-poster.jpg"); }
+    100% { background-image: url("./jibon-trishna-poster.jpg"); }
+}
+#mobile-menu {
+    display: none;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#mobile-menu ul li button {
+    display: block;
+    width: 40%;
+    text-align: left;
+    border: none;
+    padding: 8px 10px;
+    margin: 0;
+    color: black;
+    background-color: red;
+}
+
+@media (max-width: 400px) {
+    .unordered-list{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .items{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .head-text{
+        padding-left: 20px;
+    }
+    .head-list{
+        padding-right: 20px;
+    }
+    .search-input{
+        width: 60%;
+    }
+    .image-slider{
+        width: 100%;
+        height: 300px;
+    }
+    .video video{
+        max-width: 90%;
+    }
+}
