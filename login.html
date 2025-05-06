@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="max-w-[1170px] mx-auto">
+        <div class="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-red-400 to-transparent">
+            <h1 class="text-3xl font-bold text-center mt-10">Log-in</h1>
+            <form action="#" method="POST" class="max-w-[500px] mx-auto mt-10">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="shadow appearance-none  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your email">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                    <input type="password" id="password" name="password" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-rose-400 to-rose-600 hover:to-rose-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Log-In</button>
+            </form>
+            <p class="text-center text-gray-500 text-sm mt-4">Don't have an account? <a href="sign-up.html" class="text-red-500 hover:text-red-800">Sign Up</a></p>
+        </div>
+    </div>  
+</body>
+</html>
