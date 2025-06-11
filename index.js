@@ -94,7 +94,15 @@ loadMoreBtn.onclick = () => {
         boxes[i].style.display = 'inline-block';
     }
     currentitem += 5;
+    if (currentitem >= 5) {
+        loadLessBtn.style.display = 'inline-block';
+    }
+
 }
+if (currentitem <= 5) {
+        loadLessBtn.style.display = 'none';
+    }
+
 
 loadLessBtn.onclick = () =>{
     let boxes = [...document.querySelectorAll('.box-container .box')];
@@ -102,13 +110,40 @@ loadLessBtn.onclick = () =>{
         boxes[i].style.display = 'none';
     }
     currentitem -= 5;
+    if (currentitem <= 5) {
+        loadLessBtn.style.display = 'none';
+    }
 }
 
-// for pop-up movies watching
+// for carsouel
 
-function toggle(){
-    var video=document.querySelector(".video");
-    video.classList.toggle("active");
-    video.currentTime=0;
+const slides= document.querySelectorAll('.slide');
+var counter=0;
+
+slides.forEach((slide, index) => {
+    slide.style.left = `${index * 100}%`;
+    if(index<=3){
+        
+    }
+}
+)
+
+const slideImage = () => {
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${counter * 100}%)`;
+    })
+}
+
+const goNext = () => {
+    counter++;
+    slideImage();
+    if(counter>=3){
+        counter = 0; // Reset to the first slide
+    }
+}
+
+const goPrev = () => {
+    counter--;
+    slideImage();
 }
 

@@ -75,8 +75,17 @@
     </div>
     <!--banner section ends-->
     <!--carousel section starts-->
-    <div class="w-[100%] lg:h-[100vh] sm:h-[50vh] grid place-items-center lg:my-[0px] sm:py-[20px] bg-[rgba(0,0,0,0.9)]">
-        <div class="image-slider rounded-[8px]"></div>
+    <div class="bg-[rgba(0,0,0,0.9)]">
+        <div class="image-slider">
+            <img src="./jibon-trishna-poster.jpg" class="slide" height="500px" width="1000px" alt="">
+            <img src="./pradhan-poster.jpg" class="slide" height="500px" width="1000px" alt="">
+            <img src="./ravaan-pster.jpg" class="slide" height="500px" width="1000px" alt="">
+            <img src="./tekka-poster.jpg" class="slide" height="500px" width="1000px" alt="">
+        </div>
+    </div>
+    <div class="btns">
+        <button class="Prev-btn" onclick="goPrev()">Prev</button>
+        <button class="Next-btn" onclick="goNext()">Next</button>
     </div>
     <!--carousel section ends-->
     <!--content section starts -->
@@ -102,148 +111,143 @@
         </div>
        <div class="max-w-[1170px] mx-auto lg:px-[30px] md:px-[30px] sm:px-[100px] grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-6 box-container">
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./chowrongiee.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./chowrongiee.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Chowringhee</h5>
-                <p class="text-white text-left text-[13px]">Chowringhee (1968) is a Bengali film depicting the lives, struggles, and emotions of hotel staff and guests in Kolkata.</p>
-                <button class="btn1 mt-[12px]" onclick="toggle()">Watch Now</button>
-                <div class="video">
-                    <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true" ></video>
-                    <ion-icon name="close-outline" class="close" onclick="toggle()"></ion-icon>
-                 </div>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./bindass.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./bindass.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Bindass</h5>
-                <p class="text-white text-left text-[13px]">Bindass (2004) is a Bengali thriller about a young woman entangled in a dangerous conspiracy, starring Koel Mallick.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./Awaraa.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./Awaraa.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Awaraa</h5>
-                <p class="text-white text-left text-[13px]">Awara (2012) is a Bengali action-romance where Jeet’s character fights for love, blending humor, drama, and action.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./i love you.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./i love you.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">I Love You</h5>
-                <p class="text-white text-left text-[13px]">I Love You (2007) is a Bengali romantic drama directed by Ravi Kinagi, starring Dev and Payel Sarkar. It tells a heartfelt story of love, challenges, and emotional reunions.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./jibon-trisha.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./jibon-trisha.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Jibon Trishna</h5>
-                <p class="text-white text-left text-[13px]">Jibon Trishna is a Bengali drama that explores human desires, emotional struggles, and complex relationships against a backdrop of societal challenges.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./khaddan.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./khaddan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Khaddan</h5>
-                <p class="text-white text-left text-[13px]">Khadaan (2024) is a Bengali action thriller directed by Soojit Dutta, starring Dev in dual roles alongside Jisshu Sengupta.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./sobar-upore.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./sobar-upore.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Sobar Upore</h5>
-                <p class="text-white text-left text-[13px]">Sabar Uparey (Bengali: সবার উপরে) is a 1955 Indian Bengali-language crime thriller film produced by M.P Production Private Ltd and directed by Agradoot, based on A.J. Cronin's 1953 novel, Beyond This Place.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./villan.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./villan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Villan</h5>
-                <p class="text-white text-left text-[13px]">Villain"narrates the story of Raja, the protagonist, whose life takes an unknown turn when he meets his lookalike Joy, that leads to a series of incidents that follow due to the exchanged identities</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./ogo-bidesini.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./ogo-bidesini.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ogo Bideshini</h5>
-                <p class="text-white text-left text-[13px]">Ogo Bideshini (2022) is a Bengali romantic comedy directed by Anshuman Pratyush. The film stars Ankush Hazra as Anath Bandhu (AB) and Alexandra Taylor as Suzzane</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./dui-pritibi.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./dui-pritibi.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Dui Prithibi</h5>
-                <p class="text-white text-left text-[13px]">Dui Prithibi (2010) is a Bengali road drama about love, adventure, and self-discovery.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./power.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./power.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Power</h5>
-                <p class="text-white text-left text-[13px]">Power (2016) is a Bengali action-comedy film directed by Rajiv Kumar Biswas. The movie stars Jeet, Sayantika Banerjee, and Nusrat Jahan.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./ami se oshokha.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./ami se oshokha.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ami se Oshokha</h5>
-                <p class="text-white text-left text-[13px]">The Bengali film Ami Shey O Sakha (1975) is a classic romantic drama directed by Mangal Chakraborty. The film stars Uttam Kumar, Arati Bhattacharya, and Anil Chatterjee.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./prithibi amake chai.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./prithibi amake chai.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Prithibi Amare Chai</h5>
-                <p class="text-white text-left text-[13px]">Prithibi Amare Chai (1957) is a Bengali romantic drama directed by Niren Lahiri, starring Uttam Kumar and Mala Sinha. The film tells the story of Tapash, a singer who falls in love with Rina, a woman with a tragic past.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./kaler achar.webp" class="rounded-[10px] w-[100%]">
+            <img src="./kaler achar.webp" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Kuler Achar</h5>
-                <p class="text-white text-left text-[13px]">Kuler Achaar (2022) is a Bengali family drama directed by Sudeep Das. The film stars Madhumita Sarcar as Mithi, a young woman who refuses to change her surname after marriage, leading to tension with her orthodox in-laws.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./bibhao obhijan.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./bibhao obhijan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Bibhao Obhijan</h5>
-                <p class="text-white text-left text-[13px]">Bibaho Obhijaan (2019) is a Bengali comedy-drama directed by Birsa Dasgupta.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./ashur.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./ashur.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ashur</h5>
-                <p class="text-white text-left text-[13px]">Asur (2020) is a Bengali romantic thriller directed by Pavel Bhattacharjee, featuring Jeet, Abir Chatterjee, and Nusrat Jahan in lead roles. The film pays tribute to renowned sculptor Ramkinkar Baij and draws inspiration from the 2015 Deshapriya Park Durga Puja, which showcased the world's tallest Durga idol. ​</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./shantaan.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./shantaan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Shontaan</h5>
-                <p class="text-white text-left text-[13px]">Shontaan (2024) is a Bengali legal drama directed by Raj Chakraborty, featuring Mithun Chakraborty as Saradindu, an elderly father neglected by his affluent son, Indranil (Ritwick Chakraborty).</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./commando.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./commando.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Commando</h5>
-                <p class="text-white text-left text-[13px]">Commando is an upcoming Bengali action-thriller starring Dev, directed by Shamim Ahmed Rony. This Indo-Bangladesh collaboration follows a commando's mission to protect Bangladesh from a looming threat.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./kakababur pratabartan.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./kakababur pratabartan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Kakababur Pratabartan</h5>
-                <p class="text-white text-left text-[13px]">​Kakababur Protyaborton (2022) is a Bengali action-adventure film directed by Srijit Mukherji, based on Sunil Gangopadhyay’s novel Jongoler Modhye Ek Hotel.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
-            <img src="./ghore baire.jpg" class="rounded-[10px] w-[100%]">
+            <img src="./ghore baire.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ghore Baire</h5>
-                <p class="text-white text-left text-[13px]">​Ghare Baire (1984), directed by Satyajit Ray, is a Bengali romantic drama based on Rabindranath Tagore's 1916 novel.</p>
+                <button class="btn1 mt-[12px]">Watch Now</button>
             </div>
           </div>
         </div>
