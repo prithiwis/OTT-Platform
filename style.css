@@ -110,6 +110,61 @@ body{
     transition:1s;
     border-radius: 8px;
 }
+.empty-container{
+    position: relative;
+    margin-top: 100px;
+    margin: auto;
+    border:1px solid white;
+    border-radius: 20px;
+    width: 70%;
+    height: 500px;
+    display: none;
+}
+.styling{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.p{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+.trailer video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    max-width: 32px;
+    color: white;
+}
 .box-container .box:nth-child(1){
     display: block;
 }
@@ -125,46 +180,23 @@ body{
 .box-container .box:nth-child(5){
     display: block;
 }
+.box-container .box:nth-child(6){
+    display: block;
+}
+.box-container .box:nth-child(7){
+    display: block;
+}
+.box-container .box:nth-child(8){
+    display: block;
+}
+.box-container .box:nth-child(9){
+    display: block;
+}
+.box-container .box:nth-child(10){
+    display: block;
+}
 .box-container .box{
     display: none; 
-}
-.video{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    background: rgba(0, 0, 0, 0.95);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-}
-.video video{
-    position: relative;
-    max-width: 900px;
-}
-.video .active{
-    visibility: visible;
-    opacity: 1;
-}
-.close{
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    max-width: 32px;
-}
-@keyframes changeImage {
-    0% { background-image: url("./jibon-trishna-poster.jpg"); }
-    25% { background-image: url("./josh-poster.jpg"); }
-    50% { background-image: url("./tekka-poster.jpg"); }
-    75% { background-image: url("./pradhan-poster.jpg"); }
-    100% { background-image: url("./jibon-trishna-poster.jpg"); }
 }
 #mobile-menu {
     display: none;
@@ -204,7 +236,14 @@ body{
     color: black;
     background-color: red;
 }
-
+.list li a{
+    color: white;
+}
+.flexy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 @media (max-width: 400px) {
     .unordered-list{
         display: none;
@@ -237,5 +276,8 @@ body{
     .btns{
         top: 40%;
         left: 60%;
+    }
+    .trailer video{
+        max-width: 90%;
     }
 }

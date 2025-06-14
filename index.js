@@ -147,3 +147,97 @@ const goPrev = () => {
     slideImage();
 }
 
+// for selction of movies (Bengali vs global)
+function selectMovie(){
+    var select=document.getElementById("my-select");
+    var selectedValue = select.options[select.selectedIndex].value;
+    if(selectedValue=="Bengali"){
+        var boxes = document.querySelectorAll('.box');
+        boxes[0].style.display="inline-block";
+        boxes[1].style.display="inline-block";
+        boxes[2].style.display="inline-block";
+        boxes[3].style.display="inline-block";
+        boxes[4].style.display="inline-block";
+        boxes[5].style.display="none";
+        var empty= document.querySelector(".empty-container");
+        empty.style.display="none";
+        var loadMoreBtn = document.querySelector('#load-more');
+        loadMoreBtn.style.display="block";
+    }
+    else{
+        var empty= document.querySelector(".empty-container");
+        empty.style.display="block";
+        var boxes = document.querySelectorAll('.box');
+        boxes[0].style.display="none";
+        boxes[1].style.display="none";
+        boxes[2].style.display="none";
+        boxes[3].style.display="none";
+        boxes[4].style.display="none";
+        var loadMoreBtn = document.querySelector('#load-more');
+        loadMoreBtn.style.display="none";
+    }
+}
+
+// for selction of movies (Recent vs old)
+function selectMovie1(){
+    var select=document.getElementById("m");
+    var selectedValue = select.options[select.selectedIndex].value;
+    if(selectedValue=="Recent"){
+        var boxes = document.querySelectorAll('.box');
+        boxes[0].style.display="none";
+        boxes[1].style.display="inline-block";
+        boxes[2].style.display="inline-block";
+        boxes[3].style.display="inline-block";
+        boxes[4].style.display="none";
+        boxes[5].style.display="inline-block";
+        boxes[6].style.display="none";
+        boxes[7].style.display="inline-block";
+        boxes[8].style.display="inline-block";
+        boxes[9].style.display="none";
+        boxes[10].style.display="inline-block";
+        boxes[11].style.display="none";
+        boxes[12].style.display="none";
+        boxes[13].style.display="inline-block";
+        boxes[14].style.display="inline-block";
+        boxes[15].style.display="inline-block";
+        boxes[16].style.display="inline-block";
+        boxes[17].style.display="inline-block";
+        boxes[18].style.display="inline-block";
+        boxes[19].style.display="inline-block";
+        var loadMoreBtn = document.querySelector('#load-more');
+        loadMoreBtn.style.display="none";
+        
+    }
+    else{
+        var boxes = document.querySelectorAll('.box');
+        boxes[0].style.display="inline-block";
+        boxes[1].style.display="none";
+        boxes[2].style.display="none";
+        boxes[3].style.display="none";
+        boxes[4].style.display="inline-block";
+        boxes[5].style.display="none";
+        boxes[6].style.display="inline-block";
+        boxes[7].style.display="none";
+        boxes[8].style.display="none";
+        boxes[9].style.display="inline-block";
+        boxes[10].style.display="none";
+        boxes[11].style.display="inline-block";
+        boxes[12].style.display="none";
+        boxes[13].style.display="none";
+        boxes[14].style.display="none";
+        boxes[15].style.display="none";
+        boxes[16].style.display="none";
+        boxes[17].style.display="none";
+        boxes[18].style.display="none";
+        boxes[19].style.display="none";
+        var loadMoreBtn = document.querySelector('#load-more');
+        loadMoreBtn.style.display="none";
+    }
+}
+
+//for play of movies
+
+function playMovie(){
+    var tariler=document.querySelector(".trailer");
+    tariler.classList.toggle("active");
+}

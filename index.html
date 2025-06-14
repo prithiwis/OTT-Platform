@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>netflix</title>
+    <title>Dhamaka</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
             <div class="max-w-[1170px] mx-auto py-[15px]">
                 <header class="head">
                     <div class="head-text">
-                        <a href="#"><h3 class="text-bold text-3xl font-bold text-red-600">LTF</h3></a>
+                        <a href="#"><h3 class="text-bold text-3xl font-bold text-red-600">Dhamaka</h3></a>
                     </div>
                     <div class="head-list hl">
                         <ul class="unordered-list ul">
@@ -76,11 +76,11 @@
     <!--banner section ends-->
     <!--carousel section starts-->
     <div class="bg-[rgba(0,0,0,0.9)]">
-        <div class="image-slider">
-            <img src="./jibon-trishna-poster.jpg" class="slide" height="500px" width="1000px" alt="">
-            <img src="./pradhan-poster.jpg" class="slide" height="500px" width="1000px" alt="">
-            <img src="./ravaan-pster.jpg" class="slide" height="500px" width="1000px" alt="">
-            <img src="./tekka-poster.jpg" class="slide" height="500px" width="1000px" alt="">
+        <div class="image-slider rounded-lg">
+            <img src="./jibon-trishna-poster.jpg" class="slide" height="500px" width="1000px">
+            <img src="./pradhan-poster.jpg" class="slide" height="500px" width="1000px">
+            <img src="./ravaan-pster.jpg" class="slide" height="500px" width="1000px">
+            <img src="./tekka-poster.jpg" class="slide" height="500px" width="1000px">
         </div>
     </div>
     <div class="btns">
@@ -96,17 +96,22 @@
             </div>
             <div class="max-w-[700px] flex py-[10px]">
                 <div class="pl-[10px]">
-                    <select name="India" id="I" class="px-4 py-1 rounded border bg-[rgba(0,0,0,0.9)]  text-white border border-white-600">
+                    <select name="India" id="my-select" onclick="selectMovie()" class="px-4 py-1 rounded border bg-[rgba(0,0,0,0.9)] text-white border border-white-600">
                         <option value="Bengali">Bengali</option>
                         <option value="Global">Global</option>
                     </select>
                 </div>
                 <div class="pl-[10px]">
-                    <select name="movies" id="m" class="px-4 py-1 rounded border bg-[rgba(0,0,0,0.9)] text-white border border-white-600">
+                    <select name="movies" id="m" onclick="selectMovie1()" class="px-4 py-1 rounded border bg-[rgba(0,0,0,0.9)] text-white border border-white-600">
                         <option value="Recent">Recent</option>
                         <option value="Old">Old</option>
                     </select>
                 </div>
+            </div>
+        </div>
+        <div class="empty-container">
+            <div class="styling">
+                <p class="text-6xl text-center text-white"><i class="fa-brands fa-studiovinari fa-2xl"></i>Coming Soon</p>
             </div>
         </div>
        <div class="max-w-[1170px] mx-auto lg:px-[30px] md:px-[30px] sm:px-[100px] grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-6 box-container">
@@ -114,141 +119,221 @@
             <img src="./chowrongiee.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Chowringhee</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./bindass.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Bindass</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./Awaraa.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Awaraa</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./i love you.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">I Love You</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./jibon-trisha.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Jibon Trishna</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./khaddan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Khaddan</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./sobar-upore.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Sobar Upore</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./villan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Villan</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./ogo-bidesini.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ogo Bideshini</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./dui-pritibi.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Dui Prithibi</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./power.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Power</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./ami se oshokha.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ami se Oshokha</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./prithibi amake chai.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Prithibi Amare Chai</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./kaler achar.webp" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Kuler Achar</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./bibhao obhijan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Bibhao Obhijan</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./ashur.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ashur</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./shantaan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Shontaan</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./commando.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Commando</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./kakababur pratabartan.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Kakababur Pratabartan</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
           <div class="py-[20px] hover:scale-110 hover:cursor-pointer duration-1000 box">
             <img src="./ghore baire.jpg" class="rounded-[10px] w-[100%] max-h-[300px]">
             <div>
                 <h5 class="text-2xl font-medium text-white py-[8px]">Ghore Baire</h5>
-                <button class="btn1 mt-[12px]">Watch Now</button>
+                <button class="btn1 mt-[12px]" onclick="playMovie()">Watch Now</button>
             </div>
+          </div>
+          <div class="trailer">
+            <video src="./ONE PIECE - Episode 1000 Special Opening - We Are!.mp4" controls="true"></video>
+            <img src="./close.png" class="close-btn" onclick="playMovie()">
           </div>
         </div>
         <div class="flex align-center justify-center py-[20px] w-[100%]">
@@ -299,105 +384,89 @@
             <div class="w-[100%] bg-slate-900 border border-none rounded p-[20px] my-[10px]">
                 <div class="grid sm:grid-cols-[95%_auto] hover:cursor-pointer"  onclick="myfunction()">
                     <div>
-                        <p class="text-white text-xl font-bold">What is Letflix?</p>
+                        <p class="text-white text-xl font-bold">What is Dhamaka?</p>
                     </div>
                     <div>
                         <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1xj76yz e164gv2o4"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></button>
                     </div>
                 </div>
-                <p id="p1" class="text-white text-xl hidden">Letflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                <p id="p1" class="text-white text-xl hidden">Dhamaka is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
                     You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
                 </p>
             </div>
             <div class="w-[100%] bg-slate-900 border border-none rounded p-[20px] my-[10px]">
                 <div class="grid sm:grid-cols-[95%_auto] hover:cursor-pointer" onclick="myfunction1()">
                     <div>
-                        <p class="text-white text-xl font-bold">How much does Letflix cost?</p>
+                        <p class="text-white text-xl font-bold">How much does Dhamaka cost?</p>
                     </div>
                     <div>
                         <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1xj76yz e164gv2o4"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></button>
                     </div>
                 </div>
-                <p id="p2" class="text-white text-xl hidden">Watch Letflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+                <p id="p2" class="text-white text-xl hidden">Watch Dhamaka on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
                 </p>
             </div>
             <div class="w-[100%] bg-slate-900 border border-none rounded p-[20px] mt-[10px]">
                 <div class="grid sm:grid-cols-[95%_auto] hover:cursor-pointer" onclick="myfunction4()">
                     <div>
-                        <p class="text-white text-xl font-bold">What can I watch on Letflix?</p>
+                        <p class="text-white text-xl font-bold">What can I watch on Dhamaka?</p>
                     </div>
                     <div>
                         <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1xj76yz e164gv2o4"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></button>
                     </div>
                 </div>
-                <p id="p5" class="text-white text-xl hidden">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                <p id="p5" class="text-white text-xl hidden">Dhamaka has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
                 </p>
             </div>
             <div class="w-[100%] bg-slate-900 border border-none rounded p-[20px] mt-[10px]">
                 <div class="grid sm:grid-cols-[95%_auto] hover:cursor-pointer" onclick="myfunction5()">
                     <div>
-                        <p class="text-white text-xl font-bold">Is Letflix good for kids?</p>
+                        <p class="text-white text-xl font-bold">Is Dhamaka good for kids?</p>
                     </div>
                     <div>
                         <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1xj76yz e164gv2o4"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg></button>
                     </div>
                 </div>
-                <p id="p6" class="text-white text-xl hidden">The Letflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                <p id="p6" class="text-white text-xl hidden">The Dhamaka Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
                     Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
                 </p>
             </div>
         </div>
         <div class="max-w-[1170px] mx-auto mt-[30px]">
             <div class="max-w-[1000px] mx-auto">
-                <p class="text-white text-center my-[10px]">Ready to watch? Enter your email to create or restart your membership.</p>
-                <form action="#" class="grid lg:grid-cols-[70%_auto] sm:grid-cols-1">
-                    <input type="email" name="email" id="e" placeholder="enter your mail" class="w-[100%] my-[10px] sm:w-[90%] sm:mx-[15px] border-[1px] h-[50px] p-[10px] rounded bg-inherit">
-                    <button class="text-white border-[1px] ml-[10px] rounded bg-[red] border-red-700 sm:w-[90%] sm:mx-[15px] my-[10px] h-[50px] hover:bg-[rgb(193, 17, 25)]">Get Started</button>
-                </form>
+                <p class="text-white text-center my-[10px]">Watching, Great ❤️❤️ if you got any problem the you can coontact with us 🤗🤗</p>
+                <p class="text-white text-center py-[10px]">Our Number is <a href="#" class="">7478099728</a></p>
             </div>
         </div>
     </div>
     <!--content section ends -->
     <!-- fotter section starts -->
-     <div class="w-[100%] bg-[rgba(0,0,0,0.9)]">
+     <div class="w-[100%] bg-[rgba(0,0,0,0.9)] border-t-2 border-red-600">
         <div class="max-w-[1170px] mx-auto py-[20px]">
-            <div class="w-[100%] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-[20px] sm:px-[10px]">
+            <div class="w-[100%] mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 my-[20px] sm:px-[10px]">
                 <div class="text-white">
-                    <ul class="list-none">
+                    <ul class="list-none list">
                         <li class="mt-[10px]"><a href="#" class="underline">FAQ</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Investor Relations</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Privacy</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Speed Test</a></li>
-                    </ul>
-                </div>
-                <div class="text-white">
-                    <ul class="list-none">
-                        <li class="mt-[10px]"><a href="#" class="underline">Help Centre</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Jobs</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Cookie Preferences</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Legal Notices</a></li>
-                    </ul>
-                </div>
-                <div class="text-white">
-                    <ul class="list-none">
-                        <li class="mt-[10px]"><a href="#" class="underline">Account</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Ways to Watch</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Corporate Information</a></li>
                         <li class="mt-[10px]"><a href="#" class="underline">Only on Letflix</a></li>
+                        <li class="mt-[10px]"><a href="#" class="underline">Terms of Use</a></li>
                     </ul>
                 </div>
                 <div class="text-white">
-                    <ul class="list-none">
-                        <li class="mt-[10px]"><a href="#" class="underline">Media Centre</a></li>
-                        <li class="mt-[10px]"><a href="#" class="underline">Terms of Use</a></li>
+                    <ul class="list-none list">
+                        <li class="mt-[10px]"><a href="#" class="underline">Help Centre</a></li>
+                        <li class="mt-[10px]"><a href="#" class="underline">Account</a></li>
                         <li class="mt-[10px]"><a href="#" class="underline">Contact Us</a></li>
                     </ul>
+                </div>
+                <div class="flexy">
+                    <a href="https://www.facebook.com/sayan.ganguly.3154"><i class="fa-brands fa-facebook fa-2xl" style="color:#204fd9"></i></a>
+                    <a href="https://www.instagram.com/sayandutta_997?utm_source=ig_web_button_share_sheet&igsh=MTljbzc0bGYwamE3eQ=="><i class="fa-brands fa-instagram fa-2xl" style="color:#e7eeee"></i></a>
+                    <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram fa-2xl" style="color:#1fa6e0"></i></a>
                 </div>
             </div>
         </div>
      </div>
      <!-- footer section ends-->
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
