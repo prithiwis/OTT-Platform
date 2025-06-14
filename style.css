@@ -280,4 +280,8 @@ body{
     .trailer video{
         max-width: 90%;
     }
+    .flexy{
+        flex-direction: column;
+        align-items: center;
+    }
 }
