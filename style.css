@@ -114,11 +114,10 @@ body{
     position: relative;
     margin-top: 100px;
     margin: auto;
-    border:1px solid white;
     border-radius: 20px;
     width: 70%;
     height: 500px;
-    display: none;
+    display: block;
 }
 .styling{
     position: absolute;
